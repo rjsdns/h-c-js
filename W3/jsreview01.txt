@@ -1,0 +1,100 @@
+var a1 = 1;
+console.log(a1);
+var a1 = 10;
+console.log(a1);
+const PI = 3.14;
+
+let a3 = "동양";
+let a4 = `${a3}아으야`; //백틱기호를 이용한 템플릿문자열
+let a5 = 10 + "hi"; //암묵적 캐스팅
+let a6 = 10 + Number("hi");
+let a7 = 10 + Number("5");
+let a8 = String("5") + "후"; //Boolean(1) 부울린도잇음
+console.log(a3 + a4 + a3);
+console.log(a7);
+
+let a9 = 10;
+let a10 = "10";
+
+if (a9 === a10) {
+  // ==이면 트루
+  console.log("result");
+} else {
+  console.log("false");
+}
+
+let num7 = 0;
+num7 += 20;
+console.log(num7);
+
+let a11 = 0;
+console.log(++a11);
+console.log(a11++);
+
+let a12 = true;
+let a13 = false;
+if (a12 & a13) {
+  console.log("true");
+} else {
+  console.log("false");
+}
+
+let truthyVar = "hi";
+if (truthyVar) {
+  console.log("true");
+} else {
+  console.log("false");
+}
+
+function printName(person) {
+  if (!person) {
+    console.log("이름값이 없음");
+    return;
+  } else {
+    console.log("이름 값" + person.name);
+  }
+}
+
+let person = {
+  name: "제니",
+  age: 20,
+  eat: function () {
+    console.log("나 메서드");
+  },
+};
+
+console.log(person);
+person.age = 10;
+person.eat();
+person["age"] = 30;
+
+let keyName = "eat";
+person[keyName]();
+
+printName(person);
+
+function printName2(person2) {
+  const name = person2 && person2.name;
+  console.log(name || "person2의 값이 없음");
+}
+
+printName2();
+printName2({ name: "제니" });
+
+let a14 = 10;
+let res = a14 % 2 === 0 ? "짝수" : "홀수";
+console.log(res);
+
+//null 병합 연산자
+let var1;
+let var2 = 10;
+let var3 = 20;
+let var4 = var1 ?? var2;
+
+//typeof 연산자 : 값의 타입을 문자열로 반환하는 기능을 하는 연산자
+let var7 = 1;
+var7 = "hello";
+var7 = true;
+
+let t1 = typeof var7;
+console.log(t1);

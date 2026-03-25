@@ -1,0 +1,27 @@
+function main(value) {
+  value();
+}
+
+function sub() {
+  console.log("func two");
+}
+
+main(sub);
+
+function repeat(count, call) {
+  for (let idx = 1; idx <= count; idx++) {
+    call(idx);
+  }
+}
+
+repeat(5, (idx) => {
+  console.log(idx);
+});
+
+repeat(5, (idx) => {
+  console.log(idx * 2);
+});
+
+repeat(5, (idx) => {
+  console.log(idx * 3);
+});
