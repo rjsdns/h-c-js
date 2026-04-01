@@ -1,0 +1,10 @@
+리액트 특징
+1. 자바스크립트보다 성능적으로 빠름()
+
+디펜던시 : 외부 라이브러리 프로젝트 인스톨
+npm run dev : 가동
+q+enter : 종료
+package.json엔 버전정보, package-lock.json에 상세정보 있음
+
+컴포넌트 : JSX로 된 HTML을 리턴하는 함수(첫글자 대문자)
+컴포넌트의 "props"
