@@ -1,0 +1,2 @@
+Props : Properties, 부모가 자식한테 넘겨주는 것(반대는 안됨)
+Component : 
