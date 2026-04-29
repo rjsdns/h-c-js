@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <h1>현재값 : {state}</h1>
-      <button onclick={btnClick}>증가</button>
+      <button onClick={btnClick}>증가</button>
     </>
   );
 }
