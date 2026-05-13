@@ -1,0 +1,17 @@
+Props : Properties, 부모가 자식한테 넘겨주는 것(반대는 안됨)
+Component : 자식
+Lifting State Up : 두 개 이상의 컴포넌트가 데이터 공유해야 할 때 가장 가까운 공통부모로 끌어올림
+MPA 장점 : 로딩 빠름
+단점 : 처음에 로딩이 좀 느림
+
+useRef(  ,  ) 두번째 = deps
+
+클린업함수
+() => {
+	return () => {  }
+}
+
+.json : fetch에 의해 비동기된 매체를 받아서 json의 오브젝트로 변환
+.then(변수명 => 변수명.json());
+
+https://jsonplaceholder.typicode.com : app data를 대신해주는 사이트
